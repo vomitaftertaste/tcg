@@ -35,6 +35,9 @@ $(document).ready(function(e) {
 	$("#compose").keypress(function(e) {
         if (e.charCode == 13) {
 			addEventList($(this).html());
+			var newli = addEventList("Here's <a href=\"#\">Notebook</a>");
+			$(newli).hide();
+			$(newli).delay(1750).fadeIn();
 		}
     });
 });
