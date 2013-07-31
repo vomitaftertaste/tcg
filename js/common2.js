@@ -49,9 +49,9 @@ $(document).ready(function(e) {
 	$("#compose").keypress(function(e) {
         if (e.charCode == 13) {
 			addEventList($(this).html());
-			reply("Yes my lord! We will give you back what you have teach us!");
-			reply("Cambium is layer of actively dividing cells between xylem (wood) and phloem (bast) tissues that is responsible for the secondary growth of stems and roots");
-			reply("The cambium provides undifferentiated cells for plant growth");
+			reply("Yes my lord <a href='#'>@vomitaftertaste</a>! We will give you back what you have teach us!");
+			reply("<a href='#'>@vomitaftertaste</a>, <span class='obj'>#Cambium</span> is layer of actively dividing cells between xylem (wood) and phloem (bast) tissues that is responsible for the secondary growth of stems and roots");
+			reply("<a href='#'>@vomitaftertaste</a>, The <span class='obj'>#cambium</span> provides undifferentiated cells for plant growth");
 		}
     });
 });
