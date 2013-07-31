@@ -19,7 +19,18 @@ body {
 }
 </style>
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="js/common2.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	$("#compose").keypress(function(e) {
+        if (e.charCode == 13) {
+			reply("Cambium is layer of actively dividing cells between <a href=\"#\">xylem</a> (wood) and <a href=\"#\">phloem</a> (bast) tissues that is responsible for the secondary growth of stems and roots");
+
+			reply("Theoretically, the cambium is a single layer of cells, called <a href=\"#\">initial</a> cells");
+		}
+    });
+});
+</script>
 </head>
 
 <body>
